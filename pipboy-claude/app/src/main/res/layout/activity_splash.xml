@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Scanlines overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scanlines" />
+
+    <!-- Main container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Top border -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#00FF46"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- PIP-BOY Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIP-BOY 3000"
+            android:textColor="#00FF46"
+            android:textSize="12sp"
+            android:letterSpacing="0.3"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#004A14"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Big C Logo -->
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="C"
+            android:textColor="#00FF46"
+            android:textSize="80sp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:background="@drawable/neon_border"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- App name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLAUDE A.I."
+            android:textColor="#00FF46"
+            android:textSize="22sp"
+            android:letterSpacing="0.2"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANTHROPIC SYSTEMS v1.0"
+            android:textColor="#005A20"
+            android:textSize="10sp"
+            android:letterSpacing="0.1"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Loading bar container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INITIALIZING NEURAL LINK..."
+                android:textColor="#00CC3A"
+                android:textSize="10sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Progress bar background -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#001A08">
+
+                <!-- Animated progress -->
+                <View
+                    android:id="@+id/progress_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#00FF46"
+                    android:layout_gravity="start"/>
+
+                <!-- Border -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/progress_border"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECURE CONNECTION ESTABLISHED"
+                android:textColor="#003A12"
+                android:textSize="9sp"
+                android:fontFamily="monospace"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#004A14"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL *"
+            android:textColor="#003A12"
+            android:textSize="8sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="monospace"/>
+
+        <!-- Bottom border -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#00FF46"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

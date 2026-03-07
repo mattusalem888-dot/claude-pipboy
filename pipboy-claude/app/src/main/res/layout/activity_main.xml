@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Top bar Pip-Boy style -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00FF46"/>
+
+    </LinearLayout>
+
+    <!-- Green neon top border line -->
+    <View
+        android:id="@+id/top_border"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00FF46"
+        android:layout_below="@id/top_bar"/>
+
+    <!-- WebView -->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_border"
+        android:layout_above="@id/bottom_border"/>
+
+    <!-- Green neon bottom border -->
+    <View
+        android:id="@+id/bottom_border"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00FF46"
+        android:layout_above="@id/bottom_bar"/>
+
+    <!-- Bottom bar -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◈ CLAUDE A.I. ◈ ANTHROPIC SYSTEMS ◈"
+            android:textColor="#003A12"
+            android:textSize="8sp"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
